@@ -83,6 +83,7 @@
         function randomImage() {
             const randomIndex = Math.floor(Math.random() * images.length);
             const imageName = images[randomIndex];
+            console.log(randomIndex);
             document.getElementById("image").src = "./" + imageName;
             document.getElementById("reveal").innerText = "???";
             document.getElementById("reveal").setAttribute("data-name", imageName);
